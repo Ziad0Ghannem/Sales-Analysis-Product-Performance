@@ -1,0 +1,28 @@
+# 🧾 Sales Analysis & Product Performance
+
+This project focuses on analyzing sales data and understanding product performance based on real business records. The dataset was initially raw, unstructured, and contained some inconsistencies that were addressed during preprocessing.
+
+---
+
+## 📌 Objectives
+
+- Explore and understand the sales and product datasets.
+- Clean and merge the data to prepare it for analysis.
+- Calculate total sales and product quantities.
+- Extract useful insights based on dynamic user input.
+- Export clean reports to Excel for further use.
+
+---
+
+## 🛠️ Process Overview
+
+### 1. Data Exploration
+- Explored two main tables:
+  - `Sales Table`: included sales transactions, dates, product codes, prices, and quantities.
+  - `Product Info Table`: included product names and IDs.
+- Identified data types, missing values, and structure.
+
+### 2. Data Cleaning & Transformation
+- Merged both datasets using product ID/code to bring product names into the sales data.
+- Fixed inconsistent date values (some dates were in 2027). Adjusted all dates by subtracting 4 years to maintain logical consistency.
+- Created a new column `Total Price` calculated as:

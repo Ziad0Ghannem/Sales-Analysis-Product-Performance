@@ -1,39 +1,50 @@
 # 📊 Sales Analysis & Product Performance
 
-This project analyzes real sales data to uncover product trends, customer behavior, and sales performance over time. It started from a raw backup dataset with minimal documentation, and through exploration and data wrangling, meaningful insights were extracted.
+This project analyzes real sales data to uncover trends and insights about customer purchases and product performance.  
+The dashboard below summarizes the results of our exploration.
 
 ---
 
-## 🎯 Objectives
+## 📈 Dashboard Overview
 
-- 🔍 Explore and identify relevant tables (Sales & Products).
-- 🧹 Clean, merge, and transform data for analysis.
-- 💰 Calculate total revenue and quantities sold.
-- 📆 Extract insights filtered by user-specified dates.
-- 📁 Export dynamic reports to Excel for stakeholders.
+Here is a snapshot of the interactive dashboard:
+
+![Sales Dashboard](dashboard/sales_dashboard.png)
 
 ---
 
-## 🔁 Process Overview
+## 🧩 Project Structure
 
-### 1️⃣ Data Exploration
-- Reviewed and understood two core tables:
-  - `Sales`: product codes, prices, quantities, timestamps.
-  - `Products`: product names & IDs.
-- Mapped the relationships manually due to lack of documentation.
-
-### 2️⃣ Cleaning & Transformation
-- Merged product info into sales table via product ID.
-- Handled invalid dates (e.g., entries from the year 2027) by shifting all future dates back by 4 years.
-- Created a `total_price` column from `qty * price`.
-
-### 3️⃣ Functional Highlights
-- Custom functions to:
-  - Calculate total sales over time.
-  - Extract product quantities based on a specific date.
-- Outputs saved as `.xlsx` reports for business use.
+- `analysis.ipynb` → Notebook for data cleaning and visualization.
+- `dashboard/` → Contains generated charts and images.
+- `README.md` → Project summary and visuals.
 
 ---
 
-## 📁 Project Structure
+## ⚙️ Tools Used
 
+- Python: `Pandas`, `Matplotlib`, `Seaborn`
+- Jupyter Notebook
+- Excel (for report exports)
+- Git & GitHub
+
+---
+
+## 📌 Summary
+
+- Cleaned and merged raw datasets with minimal documentation.
+- Extracted insights filtered by user-defined dates.
+- Calculated key metrics like total revenue and quantities sold.
+- Exported dynamic reports to Excel for stakeholder use.
+- Created a clear, interactive dashboard to support business decisions.
+
+---
+
+## 📎 Notes
+
+- This project simulates a real-world sales reporting scenario.
+- Emphasis is placed on **data wrangling**, **visual storytelling**, and **business impact**.
+
+---
+
+> 🚀 Feel free to explore the code and visuals, and fork the project if you find it helpful!

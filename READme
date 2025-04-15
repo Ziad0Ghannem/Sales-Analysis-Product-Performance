@@ -1,71 +1,39 @@
-<h1>📊 Sales Analysis & Product Performance</h1>
+# 📊 Sales Analysis & Product Performance
 
-<p>
-  This project focuses on analyzing sales data and understanding product performance based on real business records. 
-  The dataset was initially raw, unstructured, and contained some inconsistencies that were addressed during preprocessing.
-</p>
+This project analyzes real sales data to uncover product trends, customer behavior, and sales performance over time. It started from a raw backup dataset with minimal documentation, and through exploration and data wrangling, meaningful insights were extracted.
 
-<hr>
+---
 
-<h2>🎯 Objectives</h2>
-<ul>
-  <li>Explore and understand the sales and product datasets.</li>
-  <li>Clean and merge the data to prepare it for analysis.</li>
-  <li>Calculate total sales and product quantities.</li>
-  <li>Extract useful insights based on dynamic user input.</li>
-  <li>Export clean reports to Excel for further use.</li>
-</ul>
+## 🎯 Objectives
 
-<hr>
+- 🔍 Explore and identify relevant tables (Sales & Products).
+- 🧹 Clean, merge, and transform data for analysis.
+- 💰 Calculate total revenue and quantities sold.
+- 📆 Extract insights filtered by user-specified dates.
+- 📁 Export dynamic reports to Excel for stakeholders.
 
-<h2>🔁 Process Overview</h2>
+---
 
-<h3>1. Data Exploration</h3>
-<ul>
-  <li>Explored two main tables:</li>
-  <ul>
-    <li><code>Sales Table</code>: included sales transactions, dates, product codes, prices, and quantities.</li>
-    <li><code>Product Info Table</code>: included product names and IDs.</li>
-  </ul>
-  <li>Identified data types, missing values, and structure.</li>
-</ul>
+## 🔁 Process Overview
 
-<h3>2. Data Cleaning & Transformation</h3>
-<ul>
-  <li>Merged both datasets using product ID/code to bring product names into the sales data.</li>
-  <li>Fixed inconsistent date values (some dates were in 2027). Adjusted all dates by subtracting 4 years to maintain logical consistency.</li>
-  <li>Created a new column <strong>Total Price</strong> calculated as <code>Quantity * Price</code>.</li>
-</ul>
+### 1️⃣ Data Exploration
+- Reviewed and understood two core tables:
+  - `Sales`: product codes, prices, quantities, timestamps.
+  - `Products`: product names & IDs.
+- Mapped the relationships manually due to lack of documentation.
 
-<h3>3. Functional Logic</h3>
-<ul>
-  <li>Wrote functions to extract:</li>
-  <ul>
-    <li>Total sales value over time.</li>
-    <li>Product quantities based on specific user-defined dates.</li>
-  </ul>
-  <li>Saved the output in Excel sheets for reporting.</li>
-</ul>
+### 2️⃣ Cleaning & Transformation
+- Merged product info into sales table via product ID.
+- Handled invalid dates (e.g., entries from the year 2027) by shifting all future dates back by 4 years.
+- Created a `total_price` column from `qty * price`.
 
-<hr>
+### 3️⃣ Functional Highlights
+- Custom functions to:
+  - Calculate total sales over time.
+  - Extract product quantities based on a specific date.
+- Outputs saved as `.xlsx` reports for business use.
 
-<h2>📁 Project Structure</h2>
-<ul>
-  <li><code>scripts/</code>: Python scripts for cleaning and analysis.</li>
-  <li><code>notebooks/</code>: Jupyter notebooks for interactive exploration.</li>
-  <li><code>dashboard/</code>: Images or exports of the visual dashboards.</li>
-  <li><code>README.html</code>: HTML version of project documentation.</li>
-</ul>
+---
 
-<hr>
+## 📁 Project Structure
 
-<h2>📸 Dashboard Preview</h2>
-<img src="dashboard/sales_dashboard.png" alt="Sales Dashboard" width="800"/>
-
-<hr>
-
-<h2>📌 Notes</h2>
-<ul>
-  <li>All customer-related data is anonymized to respect privacy.</li>
-  <li>Dashboards were presented to investors and financial stakeholders.</li>
-</ul>

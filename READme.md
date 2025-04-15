@@ -9,7 +9,7 @@ The dashboard below summarizes the results of our exploration.
 
 Here is a snapshot of the interactive dashboard:
 
-![Sales Dashboard](dashboard/Sales Dashboard.png)
+![Sales Dashboard](dashboard/Sales_Dashboard.png)
 
 ---
 

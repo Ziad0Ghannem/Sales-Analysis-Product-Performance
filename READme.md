@@ -9,8 +9,7 @@ The dashboard below summarizes the results of our exploration.
 
 Here is a snapshot of the interactive dashboard:
 
-`![Sales Dashboard](dashboard/Sales_Dashboard.png)`
-
+Sales_Dashboard.png
 ---
 
 ## 🧩 Project Structure

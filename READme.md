@@ -22,12 +22,29 @@ Sales_Dashboard.png
 
 ---
 
-## ⚙️ Tools Used
+## ⚙️ Tools & Technologies Used
 
-- Python: `Pandas`, `Matplotlib`, `Seaborn`
-- Jupyter Notebook
-- Excel (for report exports)
-- Git & GitHub
+<h4>Programming & Analysis:</h4>
+
+- Python: Pandas, Matplotlib, Seaborn, pyodbc, mysql-connector
+
+- Jupyter Notebook for data analysis and documentation
+
+- Excel for data cleaning and exporting reports
+
+<h4>Databases & Querying:</h4>
+
+- SQL Server Management Studio (SSMS): querying, updating, and restoring databases
+
+- Extracted and loaded data from SQL Server using Python libraries like pyodbc and mysql-connector
+
+<h4>Data Visualization & BI Tools:</h4>
+
+- Power BI: designed interactive dashboards and visual reports to communicate insights
+
+<h4>Version Control & Collaboration:</h4>
+
+- Git & GitHub for version control, code backup, and project collaboration
 
 ---
 
